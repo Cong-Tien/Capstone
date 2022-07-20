@@ -1196,6 +1196,12 @@ body{
             transform: translateX(25%);
             margin-left: auto;
         }
+        .AboutUs-left{
+            width: 100%;
+        }
+        .AboutUs-right{
+            width: 100%;
+        }
         @media screen and (max-width:1024px) {
             .subscribe input{
                 width: 410px;
@@ -1203,6 +1209,12 @@ body{
             .subscribe form{
                 transform: translateX(18%);
                 margin-left: auto;
+            }
+            .AboutUs-left{
+                width: 100%;
+            }
+            .AboutUs-right{
+                width: 100%;
             }
       }
   }
