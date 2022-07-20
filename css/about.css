@@ -729,6 +729,7 @@ p {
     .filed .image{
         margin-top: 80px;
     }
+    
 }
 @media screen and (max-width:1080px){
     .container{
@@ -749,6 +750,9 @@ p {
     .title-big{
         font-size: 32px !important;
         line-height: 32px !important;
+    }
+    .search{
+        display: none !important;
     }
 
     .header{

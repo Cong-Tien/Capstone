@@ -1192,6 +1192,9 @@ body{
         .subscribe input{
             width: 450px;
         }
+        .search{
+            display: none !important;
+        }
         .subscribe form{
             transform: translateX(25%);
             margin-left: auto;
