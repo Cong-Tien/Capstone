@@ -32,7 +32,9 @@ p {
     font-weight: 600;
     color: #3f3a64;
 }
-
+.container{
+    width: 1200px;
+}
 
 .btn-style {
     padding: 15px 50px;
@@ -1518,6 +1520,7 @@ p {
     .features .abc{
       padding-top: 50px;
     }
+   
 }
 @media screen and (max-width:992px){
     .search{

@@ -722,7 +722,7 @@ p {
     border-radius: 35px;
     transition: 0.3s ease-out;
 }
-@media screen and (min-width:1180px){
+@media screen and (max-width:1180px){
     .container{
         max-width: 960px;
     }
