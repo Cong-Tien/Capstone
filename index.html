@@ -46,12 +46,12 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <span class="fa-solid fa-align-right text-success"></span>
+              <span class="fa-solid fa-align-right"></span>
               <span id="logo1" class="text-white">Corp Vision <br /></span>
               <p id="logo2" class="text-white">Vision to your Future</p>
             </a>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler"  
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -59,7 +59,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div
               class="collapse navbar-collapse justify-content-around"
@@ -73,8 +73,8 @@
                   href="#"
                   >HOME</a
                 >
-                <a id="nav-link2" class="nav-link" href="#">ABOUT</a>
-                <a id="nav-link3" class="nav-link" href="#">SERVICES</a>
+                <a id="nav-link2" class="nav-link" href="about.html">ABOUT</a>
+                <a id="nav-link3" class="nav-link" href="services.html">SERVICES</a>
                 <div class="nav-item dropdown">
                   <a
                     id="nav-link6"
@@ -94,7 +94,7 @@
                   >
                     <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
                     <li><a class="dropdown-item" href="#">404 PAGE</a></li>
-                    <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                    <li><a class="dropdown-item" href="landing.html">LANDING PAGE</a></li>
                     <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
                   </ul>
                 </div>
@@ -110,14 +110,11 @@
       </div>
     </header>
     <section style="position: relative" class="carousel">
-      <div
-        id="carousel-1"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
+      <div id="carousel-1" class="carousel slide carousel-fade">
+        <!-- data-bs-ride="carousel" -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/b1.jpg" class="d-block w-100" alt="..." />
+            <img src="./images/b1.jpg" class="d-block w-100 img-fluid" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5 class="animate__animated animate__flipInX">
                 We will solve your issues our vision to your future
@@ -185,6 +182,7 @@
             </div>
           </div>
         </div>
+        <div class="control"></div>
         <button
           class="carousel-control-prev"
           type="button"
@@ -229,9 +227,9 @@
     <section class="AboutUs">
       <div class="container">
         <div class="row">
-          <div class="AboutUs-left col-6 mt-5">
-            <h6>ABOUT US</h6>
-            <h2>We make the best strategies for you, Enhancing your success</h2>
+          <div class="AboutUs-left col-lg-6 col-md-4 mt-5">
+            <h6 class="title-small">ABOUT US</h6>
+            <h2 class="title-big">We make the best strategies for you, Enhancing your success</h2>
             <p class="mt-md-4 mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -258,7 +256,7 @@
               </li>
             </ul>
           </div>
-          <div class="AboutUs-right col-6">
+          <div class="AboutUs-right col-lg-6 col-md-4">
             <div style="flex-wrap: nowrap" class="row">
               <div class="col-6">
                 <div style="margin-right: 6px">
@@ -282,9 +280,9 @@
     <section class="forcus">
       <div class="container">
         <div class="row">
-          <div class="col-6 forcus-left">
-            <h6>EVERY DAY BRINGS NEW CHALLENGES</h6>
-            <h2 class="mb-4">
+          <div class="col-lg-6 col-md-4 forcus-left">
+            <h6 class="title-small">EVERY DAY BRINGS NEW CHALLENGES</h6>
+            <h2 class="mb-4 title-big">
               Creative agency focused on vision, product and people
             </h2>
             <p>
@@ -300,7 +298,7 @@
               >Discover More</a
             >
           </div>
-          <div class="col-6 forcus-right">
+          <div class="col-lg-6 col-md-4 forcus-right">
             <div class="row">
               <div class="col-6">
                 <div class="forcus-item text-center mb-4">
@@ -328,10 +326,10 @@
       </div>
     </section>
     <section class="services">
-      <h1 class="text-center">Always there for your care, our Services</h1>
+      <h1 class="text-center title-big">Always there for your care, our Services</h1>
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-4 content">
+          <div class="col-lg-4 col-md-6 content">
             <a href=""
               ><img src="./images/s1.jpg" class="img-fluid" alt=""
             /></a>
@@ -342,7 +340,7 @@
             </p>
             <button class="btn btn-light">Learn More</button>
           </div>
-          <div class="col-4 content">
+          <div class="col-lg-4 col-md-6 content">
             <a href=""
               ><img src="./images/s2.jpg" class="img-fluid" alt=""
             /></a>
@@ -353,7 +351,7 @@
             </p>
             <button class="btn btn-light">Learn More</button>
           </div>
-          <div class="col-4 content">
+          <div class="col-lg-4 col-md-6 mt-md-5 content">
             <a href="">
               <img src="./images/s3.jpg" class="img-fluid" alt=""
             /></a>
@@ -368,15 +366,14 @@
       </div>
     </section>
     <section class="gallery">
-      <p class="text-center">OUR GALLERY</p>
-      <h2 class="text-center">Successful projects we've done</h2>
+      <p class="text-center title-small">OUR GALLERY</p>
+      <h2 class="text-center title-big mb-5">Successful projects we've done</h2>
       <div class="container">
         <div class="row">
-          <div class="item col-4">
+          <div class="item col-lg-4 col-md-6">
             <a
-              href="./images/c1.jpg"
-              data-lightbox="example-set"
-              data-title="Project 1"
+              href="#"
+              data-bs-toggle="modal" data-bs-target="#exampleModal1"
               class="zoom d-block"
             >
               <img
@@ -393,11 +390,25 @@
               </span>
             </a>
           </div>
-          <div class="item col-4">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex">
+                  <img src="./images/c1.jpg" alt="">
+                  <div class="content@ d-flex justify-content-start mt-4">
+                    <div class="text">
+                      <h2>Project 1</h2>
+                      <span>Image 1 of 6</span>
+                    </div>
+                    <div class="d-inline-block text-right">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="item col-lg-4 col-md-6">
             <a
-              href="./images/c2.jpg"
-              data-lightbox="example-set"
-              data-title="Project 2"
+              href="#"
+              data-bs-toggle="modal" data-bs-target="#exampleModal2"
               class="zoom d-block"
             >
               <img
@@ -414,10 +425,25 @@
               </span>
             </a>
           </div>
-          <div class="item col-4">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex">
+                  <img src="./images/c2.jpg" alt="">
+                  <div class="content@ d-flex justify-content-start mt-4">
+                    <div class="text">
+                      <h2>Project 2</h2>
+                      <span>Image 2 of 6</span>
+                    </div>
+                    <div class="d-inline-block text-right">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="item col-lg-4 col-md-6">
             <a
               href="./images/c3.jpg"
-              data-lightbox="example-set"
+               data-bs-toggle="modal" data-bs-target="#exampleModal3"
               data-title="Project 3"
               class="zoom d-block"
             >
@@ -428,17 +454,32 @@
               />
               <span class="overlay__hover"></span>
               <span class="hover-content">
-                <span class="title">Project 3</span>
+                <span class="title">Project 4</span>
                 <span class="content"
                   >Quisque ut lectus, eros et, sed commodo risus.</span
                 >
               </span>
             </a>
           </div>
-          <div class="item col-4">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex">
+                  <img src="./images/c3.jpg" alt="">
+                  <div class="content@ d-flex justify-content-start mt-4">
+                    <div class="text">
+                      <h2>Project 3</h2>
+                      <span>Image 3 of 6</span>
+                    </div>
+                    <div class="d-inline-block text-right">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="item col-lg-4 col-md-6">
             <a
               href="./images/c4.jpg"
-              data-lightbox="example-set"
+               data-bs-toggle="modal" data-bs-target="#exampleModal4"
               data-title="Project 4"
               class="zoom d-block"
             >
@@ -456,10 +497,25 @@
               </span>
             </a>
           </div>
-          <div class="item col-4">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex">
+                  <img src="./images/c4.jpg" alt="">
+                  <div class="content@ d-flex justify-content-start mt-4">
+                    <div class="text">
+                      <h2>Project 4</h2>
+                      <span>Image 4 of 6</span>
+                    </div>
+                    <div class="d-inline-block text-right">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="item col-lg-4 col-md-6">
             <a
               href="./images/c5.jpg"
-              data-lightbox="example-set"
+               data-bs-toggle="modal" data-bs-target="#exampleModal5"
               data-title="Project 5"
               class="zoom d-block"
             >
@@ -477,10 +533,25 @@
               </span>
             </a>
           </div>
-          <div class="item col-4">
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog d-flex">
+                  <img src="./images/c4.jpg" alt="">
+                  <div class="content@ d-flex justify-content-start mt-4">
+                    <div class="text">
+                      <h2>Project 5</h2>
+                      <span>Image 5 of 6</span>
+                    </div>
+                    <div class="d-inline-block text-right">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="item col-lg-4 col-md-6">
             <a
               href="./images/c6.jpg"
-              data-lightbox="example-set"
+               data-bs-toggle="modal" data-bs-target="#exampleModal6"
               data-title="Project 6"
               class="zoom d-block"
             >
@@ -499,22 +570,37 @@
             </a>
           </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog d-flex">
+                <img src="./images/c6.jpg" alt="">
+                <div class="content@ d-flex justify-content-start mt-4">
+                  <div class="text">
+                    <h2>Project 6</h2>
+                    <span>Image 6 of 6</span>
+                  </div>
+                  <div class="d-inline-block text-right">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+          </div>
+        </div>
 
         <!-- Company logo  -->
         <div class="row company-logo pt-5 mt-3 justify-content-center">
-          <div class="logo col-2">
+          <div class="logo col-lg-2 col-md-4">
             <img src="./images/brand1.png" class="img-fluid" alt="" />
           </div>
-          <div class="logo col-2">
+          <div class="logo col-lg-2 col-md-4">
             <img src="./images/brand6.png" class="img-fluid" alt="" />
           </div>
-          <div class="logo col-2">
+          <div class="logo col-lg-2 col-md-4">
             <img src="./images/brand3.png" class="img-fluid" alt="" />
           </div>
-          <div class="logo col-2">
+          <div class="logo col-lg-2 col-md-4">
             <img src="./images/brand4.png" class="img-fluid" alt="" />
           </div>
-          <div class="logo col-2">
+          <div class="logo col-lg-2 col-md-4">
             <img src="./images/brand5.png" class="img-fluid" alt="" />
           </div>
         </div>
@@ -523,12 +609,12 @@
     <section class="category">
       <div class="container">
         <div class="row">
-          <div class="col-6 category-left">
+          <div class="col-lg-6 col-md-12 category-left">
             <img src="./images/about.jpg" alt="" class="img-fluid" />
           </div>
-          <div class="col-6 category-right">
-            <h5>YOUR SUCCESS IS OUR SUCCESS</h5>
-            <h2>Web design, marketing & SEO solutions that get results</h2>
+          <div class="col-lg-6 col-md-12 category-right">
+            <h5 class="title-small">YOUR SUCCESS IS OUR SUCCESS</h5>
+            <h2 class="title-big">Web design, marketing & SEO solutions that get results</h2>
             <div class="progress-info info1">
               <h6 class="progress-tittle">
                 Marketing <span class="">80%</span>
@@ -597,8 +683,8 @@
       </div>
     </section>
     <section class="review">
-      <h6 class="text-center">HAPPY CLIENTS FEEDBACK</h6>
-      <h2 class="text-center">Reviews and Testimonials</h2>
+      <h6 class="text-center title-small">HAPPY CLIENTS FEEDBACK</h6>
+      <h2 class="text-center title-big">Reviews and Testimonials</h2>
       <div class="container">
         <div class="comment">
           <div class="review1">
@@ -671,11 +757,11 @@
       </div>
     </section>
     <section class="news">
-      <h6 class="text-center">LATEST NEWS</h6>
-      <h2 class="text-center">Our insight and articles</h2>
+      <h6 class="text-center title-small">LATEST NEWS</h6>
+      <h2 class="text-center title-big">Our insight and articles</h2>
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-header">
                 <div class="post-thumbnail">
@@ -704,7 +790,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-header">
                 <div class="post-thumbnail">
@@ -733,7 +819,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-header">
                 <div class="post-thumbnail">
@@ -767,7 +853,7 @@
     </section>
     <section class="subscribe">
       <div class="container">
-        <h3 class="text-white text-center">Let’s find out how to work together</h3>
+        <h3 class="text-white text-center title-big">Let’s find out how to work together</h3>
       <p class="text-white text-center w-50 m-auto">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
       <form class="mt-5" action="">
         <i class="fa fa-paper-plane"></i>
@@ -779,7 +865,7 @@
     <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12 row-left">
               <a class="navbar-brand" href="#">
                 <span class="fa-solid fa-align-right text-success"></span>
                 <span class="text-white">Corp Vision <br /></span>
@@ -793,20 +879,20 @@
                 <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
             </div>
-            <div class="col-4 address mt-2">
+            <div class="col-lg-4 col-md-12 address mt-2">
                 <h2 class="">Contact Info</h2>
                 <p class="mb-2">Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
                 <span class="mb-2">Phone Number : <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a></span>
                 <span class="mb-2">Email : <a href="mailto:info@example.com">info@example.com</a></span>
                 <span class="mb-2">Support : <a href="mailto:info@support.com">info@support.com</a></span>
             </div>
-            <div class="col-2 item3">
+            <div class="col-lg-2 col-md-6 item3">
               <h3>CATEGORY</h3>
               <h6>Marketing Strategy</h6>
               <h6>Startup Business</h6>
               <h6>Web development</h6>
             </div>
-            <div class="col-2 item3">
+            <div class="col-lg-2 col-md-6 item3">
               <h3>META</h3>
               <h6>Log in</h6>
               <h6>Entries feed</h6>
@@ -824,7 +910,6 @@
         <span class="fa fa-angle-up">
       </button>
      </section>
-
 
      <!-- Go to top  -->
       <script>
@@ -912,7 +997,7 @@
             dots: true,
             autoplay: true,
             autoplaySpeed: 5000,
-            arrows:true
+            arrows:false
         });
       });
     </script>

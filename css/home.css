@@ -4,7 +4,21 @@ body{
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
 }
-
+.title-small {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    display: block;
+}
+.title-big {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 600;
+    color: #3f3a64;
+}
 .container{
     width: 80%;
 }
@@ -27,6 +41,10 @@ body{
 .header .navbar .navbar-brand i{
     font-size:25px;
     font-weight:bolder;
+}
+
+.header .navbar .navbar-brand span:first-child{
+    color: #13a55a;
 }
 
 .header .navbar .navbar-brand span{
@@ -89,6 +107,17 @@ body{
     margin-bottom: 10px;
 }
 
+
+.navbar .navbar-toggler{
+    background-color: #00a63f;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.navbar-toggler i{
+    color: white;
+}
+
 .logo1{
     color: #3f3a64;
     font-weight: 700 !important;
@@ -127,8 +156,9 @@ body{
 /* Carousel  */
 
 .carousel .carousel-item img{
-    object-fit: cover;
     height: 750px;
+    background-position:center center;
+    background-size: cover;
 }
 
 .carousel .carousel-caption{
@@ -257,29 +287,10 @@ body{
     padding-left: 30px;
 }
 
-.AboutUs .AboutUs-left h6{
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #7e7d7d;
-}
-
-.AboutUs .AboutUs-left h2{
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 600;
-    color: #3f3a64;
-    width: 550px;
-    opacity: 1;
-}
-
 .AboutUs .AboutUs-left p{
     font-size: 17px;
     opacity: .8;
     line-height: 27px;
-    width: 550px;
 }
 
 .AboutUs .AboutUs-left ul{
@@ -320,24 +331,6 @@ body{
 .forcus .forcus-left{
     padding-left: 30px;
     padding-top: 50px;
-}
-
-.forcus .forcus-left h6{
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 30px;
-    letter-spacing: 1px;
-    color: #7e7d7d;
-    display: block;
-}
-
-.forcus .forcus-left h2{
-    font-size: 35px;
-    line-height: 45px;
-    font-weight: 600;
-    width: 90%;
-    color: #3f3a64;
 }
 
 .forcus .forcus-left p {
@@ -957,7 +950,8 @@ body{
     font-weight: 400;
     margin-bottom: 0;
     opacity: .9;
-    transform: translate(70px,10px);
+    text-align: right;
+    margin-top: 10px;
 }
 
 /* Subscribe  */
@@ -1140,3 +1134,1359 @@ body{
     border-radius: 35px;
     transition: 0.3s ease-out;
 }
+
+.modal{
+    background-color: rgba(1, 1, 1, 0.6);
+}
+
+.modal .modal-dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    animation-name: scale;
+    animation-duration: 1.5s;
+    margin-top: 70px;
+}
+.modal .modal-dialog img{
+    border-radius: 5px;
+    border: 5px solid white;
+}
+.modal .modal-dialog i{
+   color: white;
+   opacity: .7;
+   font-size: 35px;
+   text-align: right;
+   transform: translateX(315px);
+}
+.modal .modal-dialog h2{
+    font-size: 16px;
+    line-height: 1.8em;
+    color: #fff;
+    font-weight: 600;
+ }
+ .modal .modal-dialog span{
+    display: block;
+    clear: left;
+    color: #009f4d;
+    text-align: left;
+ }
+ .modal-dialog .text{
+    transform: translateX(-370%);
+ }
+ @keyframes scale {
+    from {
+        transform: scale(0.8);
+    }
+    to {transform: scale(1);}
+  }
+  @media screen and (max-width:1369px) {
+    .subscribe form{
+        transform: translateX(30%);
+    }
+    .subscribe input{
+        width: 500px;
+    }
+}
+  @media screen and (max-width:1181px) {
+        .subscribe input{
+            width: 450px;
+        }
+        .subscribe form{
+            transform: translateX(25%);
+            margin-left: auto;
+        }
+        @media screen and (max-width:1024px) {
+            .subscribe input{
+                width: 410px;
+            }
+            .subscribe form{
+                transform: translateX(18%);
+                margin-left: auto;
+            }
+      }
+  }
+  @media screen and (max-width:913px) {
+    .header .nav-link {
+        margin: 0;;
+        text-align: center;
+        opacity: .7;
+        transition: all 0.5s ease;
+        background-color: black;
+    }
+    .search{
+        display: none !important;
+    }
+    #header .container{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .header{
+        height: 100px !important;
+    }
+    #logo1,#header .fa-align-right{
+        font-size: 35px;
+    }
+    #logo2{
+        font-size: 15px;
+        margin-left: 4px;
+        margin-bottom: 0;
+    }
+    
+    .carousel .carousel-control-prev {
+        top: 85%;
+        width: 45px;
+        height: 45px;
+        left: 83%;
+    }
+    
+    .carousel .carousel-control-next {
+        top: 85%;
+        width: 45px;
+        height: 45px;
+        left: 90%;
+    }
+    .carousel .carousel-item img{
+        height: 700px;
+        background-position:center center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    .shape{          
+        bottom: 0;
+    }
+    .carousel .carousel-caption {
+        display: block !important;
+        left: 10%;
+        right: 3%;
+    }
+    .carousel .carousel-caption h5{
+       font-size: 50px;
+       max-width: 80%;
+       margin-top: -50px;
+    }
+    .carousel .carousel-caption p{
+        font-size: 18px;
+        max-width: 80%;
+     }
+     .btn-style{
+        margin-top: 10px;
+        padding: 15px 50px;
+        border-radius: 10px;
+     }
+    h6{
+        margin-bottom: 0;
+    }
+    .AboutUs .AboutUs-left,.AboutUs-right{
+        width: 100%;
+    }
+    .AboutUs{
+        margin-top: 50px;
+    }
+    .title-small{
+        font-size: 14px !important;
+    }
+    .title-big{
+        font-size: 31px !important;
+        line-height: 32px !important;
+    }
+    .AboutUs .AboutUs-left a {
+        font-size: 17px !important;
+    } .AboutUs .AboutUs-left i {
+        font-size: 17px !important;
+    }
+    .row{
+       margin-left: 0;
+    }
+
+     .AboutUs-right .img-fluid:last-child{
+        margin-top: 13px !important;
+     }
+     .forcus{
+        padding-top: 0;
+        margin-top: 50px;
+     }
+     .forcus .forcus-right{
+        margin-top: 40px !important;
+        width: 100%;
+     }.forcus .forcus-left{
+        width: 100%;
+     }
+    .forcus .forcus-left p {
+        margin-bottom: 10px;
+    }
+
+    .services{
+        margin-top: 0;
+    }
+
+    .gallery{
+        margin-top: 0;
+    }
+
+    .gallery .logo{
+        max-width: 25%;
+        padding: 0;
+    }
+
+    .category {
+        margin-top: 0;
+    }
+    h5{
+        margin-bottom: 0;
+    }
+    .category .category-right{
+        margin-top: 40px;
+    }
+    .category .category-right h2{
+        width: 95%;
+    }
+
+    .review .comment p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .subscribe{
+        padding-top: 50px;
+    }
+    .subscribe p{
+        width: 90% !important;
+        font-size: 17px;
+        line-height: 27px;
+        color: #666;
+        opacity: .8;
+    }
+    .subscribe form{
+        transform: translateX(15%);
+    }
+    .subscribe input{
+        width: 400px;
+    }
+    .footer .address{
+        width: 50%;
+    }
+    .footer .row-left{
+        width: 50%;
+    }
+    .footer .item3{
+        width: 50%;
+        margin-top: 40px !important;
+    } 
+    @media screen and (max-width:845px) {
+        .search{
+            display: none !important;
+        }
+        #header .container{
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+        }
+        .header{
+            height: 100px !important;
+        }
+        #logo1,#header .fa-align-right{
+            font-size: 35px;
+        }
+        #logo2{
+            font-size: 15px;
+            margin-left: 4px;
+            margin-bottom: 0;
+        }
+        
+        .carousel .carousel-control-prev {
+            top: 85%;
+            width: 45px;
+            height: 45px;
+            left: 83%;
+        }
+        
+        .carousel .carousel-control-next {
+            top: 85%;
+            width: 45px;
+            height: 45px;
+            left: 90%;
+        }
+        .carousel .carousel-item img{
+            height: 700px;
+            background-position:center center;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .shape{          
+            bottom: 0;
+        }
+        .carousel .carousel-caption {
+            display: block !important;
+            left: 10%;
+            right: 3%;
+        }
+        .carousel .carousel-caption h5{
+           font-size: 50px;
+           max-width: 80%;
+           margin-top: -50px;
+        }
+        .carousel .carousel-caption p{
+            font-size: 18px;
+            max-width: 80%;
+         }
+         .btn-style{
+            margin-top: 10px;
+            padding: 15px 50px;
+            border-radius: 10px;
+         }
+       
+        h6{
+            margin-bottom: 0;
+        }
+        .AboutUs .AboutUs-left,.AboutUs-right{
+            width: 100%;
+        }
+        .AboutUs{
+            margin-top: 50px;
+        }
+        .title-small{
+            font-size: 14px !important;
+        }
+        .title-big{
+            font-size: 31px !important;
+            line-height: 32px !important;
+        }
+        .AboutUs .AboutUs-left a {
+            font-size: 17px !important;
+        } .AboutUs .AboutUs-left i {
+            font-size: 17px !important;
+        }
+        .row{
+           margin-left: 0;
+        }
+    
+         .AboutUs-right .img-fluid:last-child{
+            margin-top: 13px !important;
+         }
+         .forcus{
+            padding-top: 0;
+            margin-top: 50px;
+         }
+         .forcus .forcus-right{
+            margin-top: 40px !important;
+            width: 100%;
+         }.forcus .forcus-left{
+            width: 100%;
+         }
+        .forcus .forcus-left p {
+            margin-bottom: 10px;
+        }
+    
+        .services{
+            margin-top: 0;
+        }
+    
+        .gallery{
+            margin-top: 0;
+        }
+    
+        .gallery .logo{
+            max-width: 25%;
+            padding: 0;
+        }
+    
+        .category {
+            margin-top: 0;
+        }
+        h5{
+            margin-bottom: 0;
+        }
+        .category .category-right{
+            margin-top: 40px;
+        }
+        .category .category-right h2{
+            width: 95%;
+        }
+    
+        .review .comment p {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .subscribe{
+            padding-top: 50px;
+        }
+        .subscribe p{
+            width: 90% !important;
+            font-size: 17px;
+            line-height: 27px;
+            color: #666;
+            opacity: .8;
+        }
+        .subscribe form{
+            transform: translateX(5%);
+        }
+        .subscribe input{
+            width: 400px;
+        }
+    
+        .footer .address{
+            width: 50%;
+            margin-top: 30px;
+        }
+        .footer .row-left{
+            width: 50%;
+        }
+        .footer .item3{
+            width: 50%;
+            margin-top: 40px !important;
+        }
+        @media screen and (max-width:770px) {
+           
+            .subscribe form{
+                margin-left: 50px;
+            }
+            .subscribe input{
+                width: 300px;
+            }
+            .footer .address{
+                width: 100%;
+                margin-top: 30px !important;
+            }
+            .footer .row-left{
+                width: 100%;
+            }
+            
+      }
+        
+        @media screen and (max-width:741px) {
+           
+            .subscribe input{
+                width: 51.9%;
+            }
+            .footer .address{
+                width: 100%;
+                margin-top: 30px !important;
+            }
+            .footer .row-left{
+                width: 100%;
+            }
+            
+      }
+      @media screen and (max-width:415px) {
+            .search{
+                display: none !important;
+            }
+            .container{
+                padding: 0;
+                margin: 0;
+            }
+            #header .container{
+                width: 100%;
+            }
+            .header{
+                height: 85px !important;
+            }
+            #logo1,#header .fa-align-right{
+                font-size: 25px;
+            }
+            #logo2{
+                font-size: 12px;
+                margin-left: -10px;
+                margin-bottom: 0;
+            }
+            .header button.navbar-toggler{
+                margin-bottom: 10px;
+            }
+            .subscribe form {
+                transform: translateX(0px);
+            }
+            
+            .carousel .carousel-control-prev {
+                top: 80%;
+                width: 42px;
+                height: 42px;
+                left: 70%;
+            }
+            
+            .carousel .carousel-control-next {
+                top: 80%;
+                width: 42px;
+                height: 42px;
+                left: 85%;
+            }
+            .carousel .carousel-item img{
+                height: 570px;
+                background-position:center center;
+                background-size: cover;
+                object-fit: cover;
+            }
+            .shape{          
+                bottom: 0;
+            }
+            .carousel .carousel-caption {
+                display: block !important;
+                left: 5%;
+                right: 3%;
+            }
+            .carousel .carousel-caption h5{
+               font-size: 30px;
+               max-width: 300px;
+            }
+            .carousel .carousel-caption p{
+                font-size: 18px;
+                max-width: 100%;
+             }
+             .btn-style{
+                padding: 12px 30px;
+                border-radius: 10px;
+             }
+            .header .nav-link {
+                margin: 0;;
+                text-align: center;
+                opacity: .7;
+                transition: all 0.5s ease;
+                background-color: black;
+            }
+            h6{
+                margin-bottom: 0;
+            }
+            .AboutUs .container{
+                width: 90%;
+            }
+            .AboutUs{
+                margin-top: 50px;
+            }
+            .title-small{
+                font-size: 14px !important;
+            }
+            .title-big{
+                font-size: 26px !important;
+                line-height: 32px !important;
+            }
+            .AboutUs .AboutUs-left li {
+                margin: 5px 0;
+            }
+            .row{
+               margin-left: 0;
+            }
+    
+            .AboutUs .row>*{
+                object-fit: cover;
+                margin: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 7px !important;
+             }
+             .AboutUs-right .img-fluid:last-child{
+                margin-top: 13px !important;
+             }
+             .AboutUs .AboutUs-left{
+                margin-left: 3% !important;
+             }
+             .forcus{
+                padding-top: 0;
+                margin-top: 50px;
+             }
+             .forcus .forcus-left{
+                width: 100%;
+             }
+             .forcus .container{
+                width: 95%;
+             }
+             .forcus .forcus-left {
+                padding-left: 4%;
+            }
+            .forcus .forcus-left p {
+                margin-bottom: 30px;
+            }
+    
+            .services{
+                margin-top: 0;
+            }
+            .services h1{
+                width: 90%;
+                margin: 20px auto;
+            }
+            .services .container{
+                width: 95%;
+            }
+            .services .row{
+               margin-left: 2%;
+            }
+    
+            .gallery{
+                margin-top: 0;
+            }
+    
+            .gallery .container{
+               width: 95%;
+            }
+            .gallery .row{
+                margin-left: 2%;
+            }
+            .gallery .logo{
+                max-width: 33.33%;
+                padding: 0;
+            }
+    
+            .category {
+                margin-top: 0;
+            }
+            .category .container{
+                width: 97%;
+            }
+            h5{
+                margin-bottom: 0;
+            }
+            .category .category-right{
+                margin-top: 40px;
+            }
+            
+            .review .container{
+                width: 90%;
+                margin-left: 2.5%;
+            }
+            .review .comment p {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            .news .container{
+                width: 96%;
+            }
+    
+            .subscribe{
+                padding-top: 50px;
+            }
+            .subscribe .container{
+                width: 95%;
+                margin-left: 2.5%;
+            }
+            .subscribe p{
+                width: 90% !important;
+                font-size: 17px;
+                line-height: 27px;
+                color: #666;
+                opacity: .8;
+            }
+    
+            .subscribe input{
+                width: 150px;
+            }
+            .footer .container{
+                width: 95%;
+                margin-left: 2%;
+            }
+            .footer p{
+                width: 99%;
+            }
+    
+            .footer .address{
+                margin-top: 40px !important;
+                width: 100%;
+            }
+    
+            .footer .item3{
+                width: 50%;
+            }
+        .carousel .carousel-control-prev {
+            top: 85%;
+            width: 45px;
+            height: 45px;
+            left: 80%;
+        }
+        
+        .carousel .carousel-control-next {
+            top: 85%;
+            width: 45px;
+            height: 45px;
+            left: 85%;
+        }
+        .subscribe form {
+            transform: translateX(0);
+        }
+        .footer .address{
+            margin-top: 40px !important;
+            width: 100%;
+        }
+    
+        .footer .item3{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:394px) {
+        .search{
+            display: none !important;
+        }
+        .container{
+            padding: 0;
+            margin: 0;
+        }
+        #header .container{
+            width: 100%;
+        }
+        .header{
+            height: 85px !important;
+        }
+        #logo1,#header .fa-align-right{
+            font-size: 25px;
+        }
+        #logo2{
+            font-size: 12px;
+            margin-left: -10px;
+            margin-bottom: 0;
+        }
+        .header button.navbar-toggler{
+            margin-bottom: 10px;
+        }
+        .subscribe form {
+            transform: translateX(0px);
+        }
+        
+        .carousel .carousel-control-prev {
+            top: 80%;
+            width: 42px;
+            height: 42px;
+            left: 70%;
+        }
+        
+        .carousel .carousel-control-next {
+            top: 80%;
+            width: 42px;
+            height: 42px;
+            left: 85%;
+        }
+        .carousel .carousel-item img{
+            height: 570px;
+            background-position:center center;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .shape{          
+            bottom: 0;
+        }
+        .carousel .carousel-caption {
+            display: block !important;
+            left: 5%;
+            right: 3%;
+        }
+        .carousel .carousel-caption h5{
+           font-size: 30px;
+           max-width: 300px;
+        }
+        .carousel .carousel-caption p{
+            font-size: 18px;
+            max-width: 100%;
+         }
+         .btn-style{
+            padding: 12px 30px;
+            border-radius: 10px;
+         }
+        .header .nav-link {
+            margin: 0;;
+            text-align: center;
+            opacity: .7;
+            transition: all 0.5s ease;
+            background-color: black;
+        }
+        h6{
+            margin-bottom: 0;
+        }
+        .AboutUs .container{
+            width: 90%;
+        }
+        .AboutUs{
+            margin-top: 50px;
+        }
+        .title-small{
+            font-size: 14px !important;
+        }
+        .title-big{
+            font-size: 26px !important;
+            line-height: 32px !important;
+        }
+        .AboutUs .AboutUs-left li {
+            margin: 5px 0;
+        }
+        .row{
+           margin-left: 0;
+        }
+
+        .AboutUs .row>*{
+            object-fit: cover;
+            margin: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 7px !important;
+         }
+         .AboutUs-right .img-fluid:last-child{
+            margin-top: 13px !important;
+         }
+         .AboutUs .AboutUs-left{
+            margin-left: 3% !important;
+         }
+         .forcus{
+            padding-top: 0;
+            margin-top: 50px;
+         }
+         .forcus .forcus-left{
+            width: 100%;
+         }
+         .forcus .container{
+            width: 95%;
+         }
+         .forcus .forcus-left {
+            padding-left: 4%;
+        }
+        .forcus .forcus-left p {
+            margin-bottom: 30px;
+        }
+
+        .services{
+            margin-top: 0;
+        }
+        .services h1{
+            width: 90%;
+            margin: 20px auto;
+        }
+        .services .container{
+            width: 95%;
+        }
+        .services .row{
+           margin-left: 2%;
+        }
+
+        .gallery{
+            margin-top: 0;
+        }
+
+        .gallery .container{
+           width: 95%;
+        }
+        .gallery .row{
+            margin-left: 2%;
+        }
+        .gallery .logo{
+            max-width: 33.33%;
+            padding: 0;
+        }
+
+        .category {
+            margin-top: 0;
+        }
+        .category .container{
+            width: 97%;
+        }
+        h5{
+            margin-bottom: 0;
+        }
+        .category .category-right{
+            margin-top: 40px;
+        }
+        
+        .review .container{
+            width: 90%;
+            margin-left: 2.5%;
+        }
+        .review .comment p {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .news .container{
+            width: 96%;
+        }
+
+        .subscribe{
+            padding-top: 50px;
+        }
+        .subscribe .container{
+            width: 95%;
+            margin-left: 2.5%;
+        }
+        .subscribe p{
+            width: 90% !important;
+            font-size: 17px;
+            line-height: 27px;
+            color: #666;
+            opacity: .8;
+        }
+
+        .subscribe input{
+            width: 130px;
+        }
+        .footer .container{
+            width: 95%;
+            margin-left: 2%;
+        }
+        .footer p{
+            width: 99%;
+        }
+
+        .footer .address{
+            margin-top: 40px !important;
+            width: 100%;
+        }
+
+        .footer .item3{
+            width: 50%;
+        }
+  }
+  @media screen and (max-width:376px) {
+    .search{
+        display: none !important;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    #header .container{
+        width: 100%;
+    }
+    .header{
+        height: 85px !important;
+    }
+    #logo1,#header .fa-align-right{
+        font-size: 25px;
+    }
+    #logo2{
+        font-size: 12px;
+        margin-left: -10px;
+        margin-bottom: 0;
+    }
+    .header button.navbar-toggler{
+        margin-bottom: 10px;
+    }
+    .subscribe form {
+        transform: translateX(0px);
+    }
+    
+    .carousel .carousel-control-prev {
+        top: 80%;
+        width: 42px;
+        height: 42px;
+        left: 70%;
+    }
+    
+    .carousel .carousel-control-next {
+        top: 80%;
+        width: 42px;
+        height: 42px;
+        left: 85%;
+    }
+    .carousel .carousel-item img{
+        height: 570px;
+        background-position:center center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    .shape{          
+        bottom: 0;
+    }
+    .carousel .carousel-caption {
+        display: block !important;
+        left: 5%;
+        right: 3%;
+    }
+    .carousel .carousel-caption h5{
+       font-size: 30px;
+       max-width: 300px;
+    }
+    .carousel .carousel-caption p{
+        font-size: 18px;
+        max-width: 100%;
+     }
+     .btn-style{
+        padding: 12px 30px;
+        border-radius: 10px;
+     }
+    .header .nav-link {
+        margin: 0;;
+        text-align: center;
+        opacity: .7;
+        transition: all 0.5s ease;
+        background-color: black;
+    }
+    h6{
+        margin-bottom: 0;
+    }
+    .AboutUs .container{
+        width: 90%;
+    }
+    .AboutUs{
+        margin-top: 50px;
+    }
+    .title-small{
+        font-size: 14px !important;
+    }
+    .title-big{
+        font-size: 26px !important;
+        line-height: 32px !important;
+    }
+    .AboutUs .AboutUs-left li {
+        margin: 5px 0;
+    }
+    .row{
+       margin-left: 0;
+    }
+
+    .AboutUs .row>*{
+        object-fit: cover;
+        margin: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 7px !important;
+     }
+     .AboutUs-right .img-fluid:last-child{
+        margin-top: 13px !important;
+     }
+     .AboutUs .AboutUs-left{
+        margin-left: 3% !important;
+     }
+     .forcus{
+        padding-top: 0;
+        margin-top: 50px;
+     }
+     .forcus .forcus-left{
+        width: 100%;
+     }
+     .forcus .container{
+        width: 90%;
+     }
+     .forcus .forcus-left {
+        padding-left: 4%;
+    }
+    .forcus .forcus-left p {
+        margin-bottom: 30px;
+    }
+
+    .services{
+        margin-top: 0;
+    }
+    .services h1{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .services .container{
+        width: 90%;
+    }
+    .services .row{
+       margin-left: 2%;
+    }
+
+    .gallery{
+        margin-top: 0;
+    }
+
+    .gallery .container{
+       width: 90%;
+    }
+    .gallery .row{
+        margin-left: 2%;
+    }
+    .gallery .logo{
+        max-width: 33.33%;
+        padding: 0;
+    }
+
+    .category {
+        margin-top: 0;
+    }
+    .category .container{
+        width: 90%;
+    }
+    h5{
+        margin-bottom: 0;
+    }
+    .category .category-right{
+        margin-top: 40px;
+    }
+    
+    .review .container{
+        width: 90%;
+        margin-left: 2.5%;
+    }
+    .review .comment p {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .news .container{
+        width: 90%;
+    }
+
+    .subscribe{
+        padding-top: 50px;
+    }
+    .subscribe .container{
+        width: 90%;
+        margin-left: 2.5%;
+    }
+    .subscribe p{
+        width: 90% !important;
+        font-size: 17px;
+        line-height: 27px;
+        color: #666;
+        opacity: .8;
+    }
+
+    .subscribe input{
+        width: 39%;
+    }
+    .footer .container{
+        width: 90%;
+        margin-left: 2%;
+    }
+    .footer p{
+        width: 99%;
+    }
+
+    .footer .address{
+        margin-top: 40px !important;
+        width: 100%;
+    }
+
+    .footer .item3{
+        width: 50%;
+    }
+    @media screen and (max-width:361px){
+        .subscribe form{
+            transform: translateX(10%);
+            margin-left: 15px;
+        }
+        .subscribe input{
+            width: 20%;
+        }
+    }
+        @media screen and (max-width:376px) {
+            .search{
+                display: none !important;
+            }
+            .container{
+                padding: 0;
+                margin: 0;
+            }
+            #header .container{
+                width: 100%;
+            }
+            .header{
+                height: 85px !important;
+            }
+            #logo1,#header .fa-align-right{
+                font-size: 25px;
+            }
+            #logo2{
+                font-size: 12px;
+                margin-left: -10px;
+                margin-bottom: 0;
+            }
+            .header button.navbar-toggler{
+                margin-bottom: 10px;
+            }
+            .subscribe form {
+                transform: translateX(0px);
+            }
+            
+            .carousel .carousel-control-prev {
+                top: 80%;
+                width: 42px;
+                height: 42px;
+                left: 70%;
+            }
+            
+            .carousel .carousel-control-next {
+                top: 80%;
+                width: 42px;
+                height: 42px;
+                left: 85%;
+            }
+            .carousel .carousel-item img{
+                height: 570px;
+                background-position:center center;
+                background-size: cover;
+                object-fit: cover;
+            }
+            .shape{          
+                bottom: 0;
+            }
+            .carousel .carousel-caption {
+                display: block !important;
+                left: 5%;
+                right: 3%;
+            }
+            .carousel .carousel-caption h5{
+               font-size: 30px;
+               max-width: 300px;
+            }
+            .carousel .carousel-caption p{
+                font-size: 18px;
+                max-width: 100%;
+             }
+             .btn-style{
+                padding: 12px 30px;
+                border-radius: 10px;
+             }
+            .header .nav-link {
+                margin: 0;;
+                text-align: center;
+                opacity: .7;
+                transition: all 0.5s ease;
+                background-color: black;
+            }
+            h6{
+                margin-bottom: 0;
+            }
+            .AboutUs .container{
+                width: 90%;
+            }
+            .AboutUs{
+                margin-top: 50px;
+            }
+            .title-small{
+                font-size: 14px !important;
+            }
+            .title-big{
+                font-size: 26px !important;
+                line-height: 32px !important;
+            }
+            .AboutUs .AboutUs-left li {
+                margin: 5px 0;
+            }
+            .row{
+               margin-left: 0;
+            }
+        
+            .AboutUs .row>*{
+                object-fit: cover;
+                margin: 0 !important;
+                padding-right: 0 !important;
+                padding-left: 7px !important;
+             }
+             .AboutUs-right .img-fluid:last-child{
+                margin-top: 13px !important;
+             }
+             .AboutUs .AboutUs-left{
+                margin-left: 3% !important;
+             }
+             .forcus{
+                padding-top: 0;
+                margin-top: 50px;
+             }
+             .forcus .forcus-left{
+                width: 100%;
+             }
+             .forcus .container{
+                width: 90%;
+             }
+             .forcus .forcus-left {
+                padding-left: 4%;
+            }
+            .forcus .forcus-left p {
+                margin-bottom: 30px;
+            }
+        
+            .services{
+                margin-top: 0;
+            }
+            .services h1{
+                width: 90%;
+                margin: 20px auto;
+            }
+            .services .container{
+                width: 90%;
+            }
+            .services .row{
+               margin-left: 2%;
+            }
+        
+            .gallery{
+                margin-top: 0;
+            }
+        
+            .gallery .container{
+               width: 90%;
+            }
+            .gallery .row{
+                margin-left: 2%;
+            }
+            .gallery .logo{
+                max-width: 33.33%;
+                padding: 0;
+            }
+        
+            .category {
+                margin-top: 0;
+            }
+            .category .container{
+                width: 90%;
+            }
+            h5{
+                margin-bottom: 0;
+            }
+            .category .category-right{
+                margin-top: 40px;
+            }
+            
+            .review .container{
+                width: 90%;
+                margin-left: 2.5%;
+            }
+            .review .comment p {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+            }
+            .news .container{
+                width: 90%;
+            }
+        
+            .subscribe{
+                padding-top: 50px;
+            }
+            .subscribe .container{
+                width: 90%;
+                margin-left: 2.5%;
+            }
+            .subscribe p{
+                width: 90% !important;
+                font-size: 17px;
+                line-height: 27px;
+                color: #666;
+                opacity: .8;
+            }
+        
+            .subscribe input{
+                width: 39%;
+            }
+            .footer .container{
+                width: 90%;
+                margin-left: 2%;
+            }
+            .footer p{
+                width: 99%;
+            }
+        
+            .footer .address{
+                margin-top: 40px !important;
+                width: 100%;
+            }
+        
+            .footer .item3{
+                width: 50%;
+            }
+            @media screen and (max-width:290px){
+                .subscribe form{
+                    transform: translateX(3%);
+                    margin-left: auto;
+                }
+                .subscribe input{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+}
+
+
+ 
+
