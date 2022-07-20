@@ -1,0 +1,8 @@
+Thành viên 1:
+	- Họ tên : Lê Công Tiến
+	- Các phần đã làm bao gồm: trang Home(index), About, Services, Landing.
+Thành viên 2:
+	- Họ tên: Nguyễn Minh Quân
+	- Các phần đã làm bao gồm: trang Contact, Blog Post, 404 Page, Elements Page
+
+- Đánh giá hoạt động nhóm: Nhóm đã thực hiện giao diện tương đối giống bài mẫu ( khoảng 99%) bao gồm cả animation và responsive và đi kèm 1 số botton có hiệu ứng.
